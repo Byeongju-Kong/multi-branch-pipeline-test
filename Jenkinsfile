@@ -3,15 +3,15 @@ pipeline{
   
   stages{
     stage('ready') {
-      sh 'echo "test ready"'
+      sh 'echo "ready"'
     }
     
     stage('Test'){
-      sh 'echo "test Test"'
+      sh 'echo "Test"'
     }
     
-    stage('Test'){
-      sh 'echo "test Test"'
+    stage('Build'){
+      sh 'echo "Build"'
     }
   }
 }
