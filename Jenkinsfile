@@ -2,16 +2,20 @@ pipeline{
   agent any
   
   stages{
-    stage('ready') {
+    stage('master ready') {
       sh 'echo "ready"'
     }
     
-    stage('Test'){
+    stage('master test'){
       sh 'echo "Test"'
     }
     
-    stage('Build'){
+    stage('master build'){
       sh 'echo "Build"'
+    }
+    
+    stage('master deploy'){
+      sh 'echo "Deploy"'
     }
   }
 }
