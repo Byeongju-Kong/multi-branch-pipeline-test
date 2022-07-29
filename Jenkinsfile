@@ -1,5 +1,9 @@
-node{
+pipeline{
   agent any
+  
+  tools {
+      gradle 'gradle'
+  }
 
   stage('master ready') {
     sh 'echo "ready"'
